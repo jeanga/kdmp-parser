@@ -19,7 +19,6 @@ add_compile_options(
 
 add_subdirectory(src/lib)
 add_subdirectory(src/parser)
-add_subdirectory(src/testapp)
 
 if(BUILD_PYTHON)
 add_subdirectory(src/python)
@@ -27,6 +26,7 @@ endif()
 
 if(BUILD_TESTS)
     add_subdirectory(src/tests)
+    add_subdirectory(src/testapp)
 endif()
 
 
