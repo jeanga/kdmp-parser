@@ -43,6 +43,8 @@ install(
     DESTINATION include
     FILES_MATCHING PATTERN "*.h*")
 
+install(TARGETS parser DESTINATION tools/kdmp-parser)
+
 install(
     EXPORT kdmp-parser
     DESTINATION share/kdmp-parser
